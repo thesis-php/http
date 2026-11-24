@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Thesis\Http;
+namespace Thesis\Http\Client;
+
+use Thesis\Http\Request;
+use Thesis\Http\Response;
 
 /**
  * @api
  */
-interface ClientMiddleware
+interface Middleware
 {
     /**
      * Pass the outgoing request to the next handler, or return a response directly.
